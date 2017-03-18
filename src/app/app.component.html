@@ -1,11 +1,14 @@
 <md-toolbar color="primary">
   <span>
+    <button *ngIf="menuButtonVisible" md-icon-button (click)="sidenav.toggle()">
+      <md-icon class="md-24" >menu</md-icon>
+    </button>￼
     Angular Demo
   </span>
 </md-toolbar>
 
 <md-sidenav-container>
-  <md-sidenav opened="true" mode="side" disableClose="true">
+  <md-sidenav [opened]="sideNavOpen" [mode]="sideNavMode" disableClose="true" #sidenav>
     <md-nav-list>
       <a [routerLink]="['/']" md-list-item>1. Introduction</a>
       <a [routerLink]="['/hello-world']" md-list-item>2. Hello World</a>
