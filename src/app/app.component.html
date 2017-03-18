@@ -1,4 +1,24 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<md-toolbar color="primary">
+  <span>
+    Angular Demo
+  </span>
+</md-toolbar>
+
+<md-sidenav-container>
+  <md-sidenav opened="true" mode="side" disableClose="true">
+    <md-nav-list>
+      <a href="#" md-list-item>Introduction</a>
+      <a href="#" md-list-item>Hello World</a>
+      <a href="#" md-list-item>Interpolation</a>
+    </md-nav-list>
+  </md-sidenav>
+
+  <main id="main-content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, dolorum expedita. Expedita fuga, ea tempora facilis vitae et dolorum ullam
+    voluptatem eos beatae odio perferendis harum voluptas sed iure excepturi.
+    </p>
+  </main>
+</md-sidenav-container>
+
+
