@@ -19,6 +19,9 @@ const routes: Routes = [
   }, {
     path: 'ng-if',
     loadChildren: './lecture/ng-if/ng-if.module.ts#NgIfModule'
+  }, {
+    path: 'ng-for',
+    loadChildren: './lecture/ng-for/ng-for.module.ts#NgForModule'
   }
 ];
 
