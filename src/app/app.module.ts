@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
 import { AppRoutingModule } from './app-routing.module';
+import { LectureModule } from './lecture/lecture.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LectureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
