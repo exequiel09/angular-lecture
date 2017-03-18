@@ -10,6 +10,9 @@ const routes: Routes = [
   }, {
     path: 'hello-world',
     loadChildren: './lecture/hello-world/hello-world.module.ts#HelloWorldModule'
+  }, {
+    path: 'interpolation',
+    loadChildren: './lecture/interpolation/interpolation.module.ts#InterpolationModule'
   }
 ];
 
