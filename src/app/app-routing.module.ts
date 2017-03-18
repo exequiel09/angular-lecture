@@ -13,6 +13,9 @@ const routes: Routes = [
   }, {
     path: 'interpolation',
     loadChildren: './lecture/interpolation/interpolation.module.ts#InterpolationModule'
+  }, {
+    path: 'events',
+    loadChildren: './lecture/events/events.module.ts#EventsModule'
   }
 ];
 
