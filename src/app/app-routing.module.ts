@@ -28,6 +28,9 @@ const routes: Routes = [
   }, {
     path: 'inputs',
     loadChildren: './lecture/inputs/inputs.module.ts#InputsModule'
+  }, {
+    path: 'outputs',
+    loadChildren: './lecture/outputs/outputs.module.ts#OutputsModule'
   }
 ];
 
