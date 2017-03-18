@@ -16,6 +16,9 @@ const routes: Routes = [
   }, {
     path: 'events',
     loadChildren: './lecture/events/events.module.ts#EventsModule'
+  }, {
+    path: 'ng-if',
+    loadChildren: './lecture/ng-if/ng-if.module.ts#NgIfModule'
   }
 ];
 
