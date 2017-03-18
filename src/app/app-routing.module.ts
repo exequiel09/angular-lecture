@@ -6,8 +6,10 @@ import { HomeComponent } from './lecture/home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    children: []
+    component: HomeComponent
+  }, {
+    path: 'hello-world',
+    loadChildren: './lecture/hello-world/hello-world.module.ts#HelloWorldModule'
   }
 ];
 
