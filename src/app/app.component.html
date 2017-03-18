@@ -1,4 +1,31 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<md-toolbar color="primary">
+  <span>
+    <button *ngIf="menuButtonVisible" md-icon-button (click)="sidenav.toggle()">
+      <md-icon class="md-24" >menu</md-icon>
+    </button>￼
+    Angular Demo
+  </span>
+</md-toolbar>
+
+<md-sidenav-container>
+  <md-sidenav [opened]="sideNavOpen" [mode]="sideNavMode" [disableClose]="sideNavDisableClose" #sidenav>
+    <md-nav-list>
+      <a [routerLink]="['/']" md-list-item>1. Introduction</a>
+      <a [routerLink]="['/hello-world']" md-list-item>2. Hello World</a>
+      <a [routerLink]="['/interpolation']" md-list-item>3. Interpolation</a>
+      <a [routerLink]="['/events']" md-list-item>4. Events</a>
+      <a [routerLink]="['/ng-if']" md-list-item>5.1 ngIf</a>
+      <a [routerLink]="['/ng-for']" md-list-item>5.1 ngFor</a>
+      <a [routerLink]="['/bindings']" md-list-item>6. Bindings</a>
+      <a [routerLink]="['/inputs']" md-list-item>7. Inputs</a>
+      <a [routerLink]="['/outputs']" md-list-item>8. Outputs</a>
+      <a [routerLink]="['/two-way-data-binding']" md-list-item>9. Two-way Data Binding</a>
+    </md-nav-list>
+  </md-sidenav>
+
+  <main id="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</md-sidenav-container>
+
+
