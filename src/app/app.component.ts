@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(evt: Event) {
-    if ((evt.target as any).innerWidth < 500) {
+    if ((evt.target as any).innerWidth < 768) {
       this.menuButtonVisible = true;
       this.sideNavMode = 'over';
       this.sideNavOpen = false;
