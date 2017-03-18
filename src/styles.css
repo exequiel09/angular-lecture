@@ -1,5 +1,6 @@
 @import '~normalize.css/normalize.css';
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import '~@angular/material/sidenav/sidenav.css';
 @import '~@angular/material/button/button.css';
 
 * {
