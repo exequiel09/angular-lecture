@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --extract-css",
+    "build-dev-aot": "rm -rf dist; ng build --dev --aot --extract-css",
+    "build-prod-aot": "rm -rf dist; ng build --prod --aot --extract-css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
