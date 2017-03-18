@@ -22,10 +22,12 @@ const routes: Routes = [
   }, {
     path: 'ng-for',
     loadChildren: './lecture/ng-for/ng-for.module.ts#NgForModule'
-  }
-  , {
+  }, {
     path: 'bindings',
     loadChildren: './lecture/bindings/bindings.module.ts#BindingsModule'
+  }, {
+    path: 'inputs',
+    loadChildren: './lecture/inputs/inputs.module.ts#InputsModule'
   }
 ];
 
