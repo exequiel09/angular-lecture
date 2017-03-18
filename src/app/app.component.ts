@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   public menuButtonVisible = false;
   public sideNavMode = 'side';
   public sideNavOpen = true;
+  public sideNavDisableClose = true;
 
   @ViewChild(MdSidenav) sidenav: MdSidenav;
 
@@ -28,11 +29,13 @@ export class AppComponent implements OnInit {
       this.menuButtonVisible = true;
       this.sideNavMode = 'over';
       this.sideNavOpen = false;
+      this.sideNavDisableClose = false;
       this.sidenav.close();
     } else {
       this.menuButtonVisible = false;
       this.sideNavMode = 'side';
       this.sideNavOpen = true;
+      this.sideNavDisableClose = true;
       this.sidenav.open();
     }
   }
