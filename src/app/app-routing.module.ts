@@ -34,6 +34,9 @@ const routes: Routes = [
   }, {
     path: 'two-way-data-binding',
     loadChildren: './lecture/two-way-data-binding/two-way-data-binding.module.ts#TwoWayDataBindingModule'
+  }, {
+    path: 'pipes',
+    loadChildren: './lecture/pipes/pipes.module.ts#PipesModule'
   }
 ];
 
