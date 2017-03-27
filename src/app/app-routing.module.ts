@@ -37,6 +37,9 @@ const routes: Routes = [
   }, {
     path: 'pipes',
     loadChildren: './lecture/pipes/pipes.module.ts#PipesModule'
+  }, {
+    path: 'custom-pipes',
+    loadChildren: './lecture/custom-pipes/custom-pipes.module.ts#CustomPipesModule'
   }
 ];
 
