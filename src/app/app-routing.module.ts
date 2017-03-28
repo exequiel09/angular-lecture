@@ -40,6 +40,9 @@ const routes: Routes = [
   }, {
     path: 'custom-pipes',
     loadChildren: './lecture/custom-pipes/custom-pipes.module.ts#CustomPipesModule'
+  }, {
+    path: 'async-pipe',
+    loadChildren: './lecture/async-pipe/async-pipe.module.ts#AsyncPipeModule'
   }
 ];
 
