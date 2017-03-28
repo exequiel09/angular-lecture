@@ -34,6 +34,15 @@ const routes: Routes = [
   }, {
     path: 'two-way-data-binding',
     loadChildren: './lecture/two-way-data-binding/two-way-data-binding.module.ts#TwoWayDataBindingModule'
+  }, {
+    path: 'pipes',
+    loadChildren: './lecture/pipes/pipes.module.ts#PipesModule'
+  }, {
+    path: 'custom-pipes',
+    loadChildren: './lecture/custom-pipes/custom-pipes.module.ts#CustomPipesModule'
+  }, {
+    path: 'async-pipe',
+    loadChildren: './lecture/async-pipe/async-pipe.module.ts#AsyncPipeModule'
   }
 ];
 
